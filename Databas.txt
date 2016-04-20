@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- SQL XML created by WWW SQL Designer, https://github.com/ondras/wwwsqldesigner/ -->
+<!-- Active URL: http://ondras.zarovi.cz/sql/demo/ -->
+<sql>
+<datatypes db="mysql">
+	<group color="rgb(238,238,170)" label="Numeric">
+		<type label="Integer" quote="" sql="INTEGER" length="0" />
+	 	<type label="TINYINT" quote="" sql="TINYINT" length="0" />
+	 	<type label="SMALLINT" quote="" sql="SMALLINT" length="0" />
+	 	<type label="MEDIUMINT" quote="" sql="MEDIUMINT" length="0" />
+	 	<type label="INT" quote="" sql="INT" length="0" />
+		<type label="BIGINT" quote="" sql="BIGINT" length="0" />
+		<type label="Decimal" quote="" sql="DECIMAL" length="1" re="DEC" />
+		<type label="Single precision" quote="" sql="FLOAT" length="0" />
+		<type label="Double precision" quote="" sql="DOUBLE" length="0" re="DOUBLE" />
+	</group>
+
+	<group color="rgb(255,200,200)" label="Character">
+		<type label="Char" quote="'" sql="CHAR" length="1" />
+		<type label="Varchar" quote="'" sql="VARCHAR" length="1" />
+		<type label="Text" quote="'" sql="MEDIUMTEXT" length="0" re="TEXT" />
+		<type label="Binary" quote="'" sql="BINARY" length="1" />
+		<type label="Varbinary" quote="'" sql="VARBINARY" length="1" />
+		<type label="BLOB" quote="'" sql="BLOB" length="0" re="BLOB" />
+	</group>
+
+	<group color="rgb(200,255,200)" label="Date &amp; Time">
+		<type label="Date" quote="'" sql="DATE" length="0" />
+		<type label="Time" quote="'" sql="TIME" length="0" />
+		<type label="Datetime" quote="'" sql="DATETIME" length="0" />
+		<type label="Year" quote="" sql="YEAR" length="0" />
+		<type label="Timestamp" quote="'" sql="TIMESTAMP" length="0" />
+	</group>
+	
+	<group color="rgb(200,200,255)" label="Miscellaneous">
+		<type label="ENUM" quote="" sql="ENUM" length="1" />
+		<type label="SET" quote="" sql="SET" length="1" />
+		<type label="Bit" quote="" sql="bit" length="0" />
+	</group>
+</datatypes><table x="95" y="293" name="Base">
+<row name="Base_ID" null="0" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="Name" null="1" autoincrement="0">
+<datatype>VARCHAR</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="BASE_ID">
+<part>Base_ID</part>
+</key>
+</table>
+<table x="116" y="10" name="AirPlane">
+<row name="AirPlane_ID" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>AirPlane_ID</part>
+</key>
+</table>
+<table x="243" y="10" name="Crew">
+<row name="id" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="Name" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="Prof:ID" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>id</part>
+</key>
+</table>
+<table x="349" y="10" name="Weapon">
+<row name="Weapon_ID" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>Weapon_ID</part>
+</key>
+</table>
+<table x="475" y="10" name="Deployed">
+<row name="id" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>id</part>
+</key>
+</table>
+<table x="609" y="10" name="Client">
+<row name="id" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>id</part>
+</key>
+</table>
+<table x="719" y="10" name="Mission">
+<row name="id" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>id</part>
+</key>
+</table>
+<table x="10" y="114" name="Manufacturer">
+<row name="id" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>id</part>
+</key>
+</table>
+<table x="629" y="213" name="Gear">
+<row name="id" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>id</part>
+</key>
+</table>
+<table x="275" y="114" name="Profession">
+<row name="id" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>id</part>
+</key>
+</table>
+<table x="416" y="114" name="Hangar">
+<row name="id" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>id</part>
+</key>
+</table>
+<table x="536" y="114" name="FikaRum">
+<row name="id" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>id</part>
+</key>
+</table>
+<table x="666" y="114" name="Lager">
+<row name="id" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>id</part>
+</key>
+</table>
+<table x="775" y="114" name="Destination">
+<row name="id" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>id</part>
+</key>
+</table>
+</sql>

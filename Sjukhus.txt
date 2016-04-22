@@ -21,4 +21,6 @@ Hur många rum kan en patient ha?   	   RUM 1------ 1PATIENT
 Hur många rum kan en avdelning ha?? 	   AVDELNING 1---* RUM
 Hur många Läkare kan en avdelning ha??      AVDELING 1----* LÄKARE
 
+Hur många
+
 

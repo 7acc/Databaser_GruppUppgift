@@ -37,18 +37,27 @@
 		<type label="SET" quote="" sql="SET" length="1" />
 		<type label="Bit" quote="" sql="bit" length="0" />
 	</group>
-</datatypes><table x="283" y="147" name="Patient">
+</datatypes><table x="373" y="146" name="Patient">
 <row name="Patient_ID" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
-<default>NULL</default></row>
-<row name="Cause_ID" null="1" autoincrement="0">
+<default>NULL</default><relation table="CausePatient" row="Patrient_ID" />
+</row>
+<row name="Prescription_ID" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
+<row name="Staff_ID" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default><relation table="Staff" row="Staff_ID" />
+</row>
+<row name="Room_ID" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default><relation table="Room" row="Room_ID" />
+</row>
 <key type="PRIMARY" name="">
 <part>Patient_ID</part>
 </key>
 </table>
-<table x="672" y="99" name="Profession">
+<table x="973" y="146" name="Profession">
 <row name="Profession_ID" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -56,18 +65,19 @@
 <part>Profession_ID</part>
 </key>
 </table>
-<table x="161" y="103" name="Cause">
-<row name="Cause_ID" null="1" autoincrement="1">
-<datatype>INTEGER</datatype>
-<default>NULL</default></row>
+<table x="17" y="103" name="Cause">
 <row name="CauseType_ID" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default><relation table="CauseType" row="CauseType_ID" />
+</row>
+<row name="Cause_ID" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
 <key type="PRIMARY" name="">
 <part>Cause_ID</part>
 </key>
 </table>
-<table x="44" y="31" name="CauseType">
+<table x="212" y="16" name="CauseType">
 <row name="CauseType_ID" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -75,57 +85,191 @@
 <part>CauseType_ID</part>
 </key>
 </table>
-<table x="548" y="145" name="Staff">
-<row name="Staff_ID" null="1" autoincrement="1">
-<datatype>INTEGER</datatype>
-<default>NULL</default></row>
+<table x="724" y="157" name="Staff">
 <row name="Profession_ID" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default><relation table="Profession" row="Profession_ID" />
+</row>
+<row name="Department_ID" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default><relation table="Department" row="Department_ID" />
+</row>
+<row name="Staff_ID" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
 <key type="PRIMARY" name="">
 <part>Staff_ID</part>
 </key>
 </table>
-<table x="400" y="198" name="StaffPatient">
-<row name="Patient_ID" null="1" autoincrement="1">
-<datatype>INTEGER</datatype>
-<default>NULL</default></row>
-<row name="Staff_ID" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
-<default>NULL</default></row>
-<key type="PRIMARY" name="">
-<part>Patient_ID</part>
-</key>
-</table>
-<table x="401" y="287" name="Treatment">
+<table x="518" y="408" name="Treatment">
 <row name="Treatment_ID" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
 <row name="Patient_ID" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
-<default>NULL</default></row>
+<default>NULL</default><relation table="Patient" row="Patient_ID" />
+</row>
 <row name="Date" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
-<row name="Alive?" null="1" autoincrement="0">
+<row name="PainfulDeath=TRUE!" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
-<row name="Treated" null="1" autoincrement="0">
+<row name="WathsDone_ID" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
-<default>NULL</default></row>
+<default>NULL</default><relation table="WathsDone" row="WathsDone_ID" />
+</row>
+<row name="TreatmentStatus_ID" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default><relation table="TreatmentStatus" row="TreatmentStatus_ID" />
+</row>
 <key type="PRIMARY" name="">
 <part>Treatment_ID</part>
 </key>
 </table>
-<table x="364" y="30" name="CauseTypeProfession">
+<table x="459" y="27" name="CauseTypeProfession">
 <row name="CauseType_ID" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
-<default>NULL</default></row>
-<row name="Profession_ID" null="1" autoincrement="0">
+<default>NULL</default><relation table="CauseType" row="CauseType_ID" />
+</row>
+<row name="Specialication_ID" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default><relation table="Specialication" row="id" />
+</row>
+<key type="PRIMARY" name="">
+<part>CauseType_ID</part>
+</key>
+</table>
+<table x="868" y="3" name="Person">
+<row name="id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
 <key type="PRIMARY" name="">
-<part>CauseType_ID</part>
+<part>id</part>
+</key>
+</table>
+<table x="1028" y="271" name="Department">
+<row name="Department_ID" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>Department_ID</part>
+</key>
+</table>
+<table x="642" y="285" name="Room">
+<row name="Room_ID" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="Avilible" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="Department_ID" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default><relation table="Department" row="Department_ID" />
+</row>
+<key type="PRIMARY" name="">
+<part>Room_ID</part>
+</key>
+</table>
+<table x="996" y="65" name="Specialication">
+<row name="id" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default><relation table="Profession" row="Profession_ID" />
+</row>
+<key type="PRIMARY" name="">
+<part>id</part>
+</key>
+</table>
+<table x="85" y="411" name="Drugs">
+<row name="Drugs_ID" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="Description" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="DrugType_ID" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default><relation table="DrugType" row="DrugType_ID" />
+</row>
+<key type="PRIMARY" name="">
+<part>Drugs_ID</part>
+</key>
+</table>
+<table x="108" y="230" name="PrecsDrugs">
+<row name="Drugs_ID" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default><relation table="Drugs" row="Drugs_ID" />
+</row>
+<row name="Patient_ID" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default><relation table="Patient" row="Patient_ID" />
+</row>
+<row name="Date" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="Staff_ID" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default><relation table="Staff" row="Staff_ID" />
+</row>
+<key type="PRIMARY" name="">
+</key>
+</table>
+<table x="49" y="558" name="DrugType">
+<row name="DrugType_ID" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="Description" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>DrugType_ID</part>
+</key>
+</table>
+<table x="190" y="105" name="CausePatient">
+<row name="Patrient_ID" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="Cause_ID" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default><relation table="Cause" row="Cause_ID" />
+</row>
+<key type="PRIMARY" name="">
+<part>Patrient_ID</part>
+</key>
+</table>
+<table x="752" y="538" name="TreatmentStatus">
+<row name="TreatmentStatus_ID" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="Status" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>TreatmentStatus_ID</part>
+</key>
+</table>
+<table x="963" y="395" name="TreatStaff">
+<row name="Staff_ID" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default><relation table="Staff" row="Staff_ID" />
+</row>
+<row name="Treatment_ID" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default><relation table="Treatment" row="Treatment_ID" />
+</row>
+<key type="PRIMARY" name="">
+<part>Staff_ID</part>
+</key>
+</table>
+<table x="317" y="512" name="WathsDone">
+<row name="WathsDone_ID" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="Description" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>WathsDone_ID</part>
 </key>
 </table>
 </sql>

@@ -17,8 +17,8 @@ Hur många avdelningar har ett sjukhus?     AVDELNING *---1 SJUKHUS
 Hur många ansälda har ett sjukhus??        ANSTÄLDA *---1 SJUKHUS
 Hur många sjukdommar kan en läkare bota??  SJUKDOM  *---* LÄKARE
 Hur många Yrken finns det i anstälda??     YRKEN 1---*  ANSTÄLD
-Hur många rum kan en patient ha?   	   RUM 1------ *PATIENT
+Hur många rum kan en patient ha?   	   RUM 1------ 1PATIENT
 Hur många rum kan en avdelning ha?? 	   AVDELNING 1---* RUM
-Hur många Läkare an en avdelning ha??      AVDELING 1----* LÄKARE
+Hur många Läkare kan en avdelning ha??      AVDELING 1----* LÄKARE
 
 

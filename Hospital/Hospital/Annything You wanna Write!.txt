@@ -1,0 +1,10 @@
+﻿-----------------------------------------------------------------
+Insert a primary Key
+
+public ICollection<AirCraft> AirCraft { get; set; }
+
+        public AirLine()
+        {
+            this.AirCraft = new HashSet<AirCraft>();
+        }
+------------------------------------------------------------------

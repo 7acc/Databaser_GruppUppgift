@@ -4,47 +4,62 @@ using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Hospital.Class_Map.RoomDepartment;
+using Hospital.Class_Map.Drugs;
+using Hospital.Class_Map.Cause;
 
 namespace Hospital
 {
     public class Patient
     {
-        // P-Key
+        // -----------P-Key------------
         public int PatientID { get; set; }
 
-        // Properties
+        //--------- Properties---------
+        // First name
         [Required]
-        [StringLength(50)]
+        [StringLength(50, ErrorMessage = " You cant have longer name then 50 chars!!")]
         [Display(Name = "First Name")]
         public string FName { get; set; }
+        //Last name
         [Required]
-        [StringLength(50,ErrorMessage = " You cant have longer name then 50 chars!!")]
+        [StringLength(50, ErrorMessage = " You cant have longer name then 50 chars!!")]
         [Display(Name = "Last Name")]
         public string LName { get; set; }
+        //Adress
         public string Adress { get; set; }
-        [Display(Name ="Phone Number")]
+        //Phone nr
+        [Display(Name = "Phone Number")]
         public string PhoneNR { get; set; }
+        //Social Security Number
         [Display(Name = "Social Security Number")]
         [StringLength(10)]
         public string SSN { get; set; }
+        //Time checked in to hospital
         [DataType(DataType.Date)]
         public DateTime CeckInHospital { get; set; }
+        //Full name
         [Display(Name = "Full Name")]
         public string Name
-        { get { return FName +" "+ LName; }  }
+        { get { return FName + " " + LName; } }
 
-        // F-Keys
-        public int PrescriptionID { get; set; }
-        public int StaffID { get; set; }
-        public int RoomID { get; set; }
+        //-----------F-Keys------------
+        public Prescription PrescriptionID { get; set; }
+        public Staff StaffID { get; set; }
+        public Room RoomID { get; set; }
+        // Många till många
+        public virtual ICollection<Cause> Causes { get; set; }
+
+
+        // --------Construktor-----------
+        public Patient()
+        {
+            this.Causes = new HashSet<Cause>();
+        }
 
 
 
 
-        //public Patient(string FName,string LName,string Adress,string PhoneNr):base(FName,LName,Adress,PhoneNr)
-        //{
-
-        //}
 
     }
 }

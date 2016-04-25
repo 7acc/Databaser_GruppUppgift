@@ -15,13 +15,12 @@ namespace Hospital
         // ---------P-Key------------
         public int StaffID { get; set; }
 
-        // ---------Properties--------
-        [Required]
-        [StringLength(50, ErrorMessage = " You cant have longer name then 50 chars!!")]
+        // ---------Properties--------     
+        [StringLength(50)]
         [Display(Name = "First Name")]
         public string FName { get; set; }
-        [Required]
-        [StringLength(50, ErrorMessage = " You cant have longer name then 50 chars!!")]
+     
+        [StringLength(50)]
         [Display(Name = "Last Name")]
         public string LName { get; set; }
         public string Adress { get; set; }
@@ -32,9 +31,9 @@ namespace Hospital
         public string SSN { get; set; }       
         [DataType(DataType.Date)]
         public DateTime HierDate { get; set; }
-        [Display(Name = "Full Name")]
-        public string Name
-        { get { return FName + " " + LName; } }
+        //[Display(Name = "Full Name")]
+        //public string Name
+        //{ get { return FName + " " + LName; } }
 
         // ----------F-Keys------------
         public Proffesion _Proffesion { get; set; }

@@ -64,18 +64,10 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.ProffesionID, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model._Department, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.ProffesionID, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.ProffesionID, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.DepartmentID, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.DepartmentID, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.DepartmentID, "", new { @class = "text-danger" })
+                @Html.EditorFor(model => model._Department, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model._Department, "", new { @class = "text-danger" })
             </div>
         </div>
 

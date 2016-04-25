@@ -167,10 +167,8 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="Class_Map\Cause\CauseTypeProfession.cs" />
     <Compile Include="Class_Map\Cause\Cause.cs" />
     <Compile Include="Class_Map\Cause\CauseType.cs" />
-    <Compile Include="Class_Map\Cause\Cause_Patient.cs" />
     <Compile Include="Class_Map\Drugs\Drug.cs" />
     <Compile Include="Class_Map\Drugs\DrugType.cs" />
     <Compile Include="Class_Map\Drugs\Prescription.cs" />
@@ -179,7 +177,6 @@
     <Compile Include="Class_Map\RoomDepartment\Room.cs" />
     <Compile Include="Class_Map\Treatment\Treatment.cs" />
     <Compile Include="Class_Map\Treatment\TreatmentStatus.cs" />
-    <Compile Include="Class_Map\Treatment\Treatment_Staff.cs" />
     <Compile Include="Class_Map\Treatment\WhatsDone.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -188,6 +185,10 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="HospitalDBContext.cs" />
+    <Compile Include="Migrations\201604251222432_Added_treatment.cs" />
+    <Compile Include="Migrations\201604251222432_Added_treatment.Designer.cs">
+      <DependentUpon>201604251222432_Added_treatment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -265,6 +266,11 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201604251222432_Added_treatment.resx">
+      <DependentUpon>201604251222432_Added_treatment.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

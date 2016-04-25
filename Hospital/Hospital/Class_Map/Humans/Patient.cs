@@ -44,8 +44,8 @@ namespace Hospital
         { get { return FName + " " + LName; } }
 
         //-----------F-Keys------------
-        public Prescription PrescriptionID { get; set; }
-        public Staff StaffID { get; set; }
+        public Prescription _Prescription { get; set; }
+        public Staff _Staff { get; set; }
         public Room RoomID { get; set; }
         // Många till många
         public virtual ICollection<Cause> Causes { get; set; }

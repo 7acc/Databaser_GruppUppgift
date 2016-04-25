@@ -10,7 +10,7 @@ namespace Hospital.Class_Map.Treatment
     public class TreatmentStatus
     {
         //------------------------------------------------
-        public int StatusID { get; set; }
+        public int TreatmentStatusID { get; set; }
 
         //------------------------------------------------
         [StringLength(15, ErrorMessage = "The status cant be longer than 15 characters!!")]

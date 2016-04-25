@@ -136,9 +136,8 @@ C:\Users\annah\Documents\GitHub\Databaser_GruppUppgift\Hospital\Hospital\bin\Mic
 C:\Users\annah\Documents\GitHub\Databaser_GruppUppgift\Hospital\Hospital\obj\Debug\Hospital.csprojResolveAssemblyReference.cache
 C:\Users\annah\Documents\GitHub\Databaser_GruppUppgift\Hospital\Hospital\obj\Debug\Hospital.dll
 C:\Users\annah\Documents\GitHub\Databaser_GruppUppgift\Hospital\Hospital\obj\Debug\Hospital.pdb
-C:\Users\Hampus Lundgren\Documents\GitHub\Sjukhus\Databaser_GruppUppgift\Hospital\Hospital\obj\Debug\Hospital.csprojResolveAssemblyReference.cache
-C:\Users\Hampus Lundgren\Documents\GitHub\Sjukhus\Databaser_GruppUppgift\Hospital\Hospital\obj\Debug\Hospital.dll
-C:\Users\Hampus Lundgren\Documents\GitHub\Sjukhus\Databaser_GruppUppgift\Hospital\Hospital\obj\Debug\Hospital.pdb
+C:\Users\annah\Documents\GitHub\Databaser_GruppUppgift\Hospital\Hospital\obj\Debug\Hospital.csproj.GenerateResource.Cache
+C:\Users\annah\Documents\GitHub\Databaser_GruppUppgift\Hospital\Hospital\obj\Debug\Hospital.Migrations.Added_treatment.resources
 C:\Users\Hampus Lundgren\Documents\GitHub\Sjukhus\Databaser_GruppUppgift\Hospital\Hospital\bin\roslyn\csc.exe
 C:\Users\Hampus Lundgren\Documents\GitHub\Sjukhus\Databaser_GruppUppgift\Hospital\Hospital\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 C:\Users\Hampus Lundgren\Documents\GitHub\Sjukhus\Databaser_GruppUppgift\Hospital\Hospital\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
@@ -205,3 +204,8 @@ C:\Users\Hampus Lundgren\Documents\GitHub\Sjukhus\Databaser_GruppUppgift\Hospita
 C:\Users\Hampus Lundgren\Documents\GitHub\Sjukhus\Databaser_GruppUppgift\Hospital\Hospital\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\Hampus Lundgren\Documents\GitHub\Sjukhus\Databaser_GruppUppgift\Hospital\Hospital\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Hampus Lundgren\Documents\GitHub\Sjukhus\Databaser_GruppUppgift\Hospital\Hospital\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Hampus Lundgren\Documents\GitHub\Sjukhus\Databaser_GruppUppgift\Hospital\Hospital\obj\Debug\Hospital.csprojResolveAssemblyReference.cache
+C:\Users\Hampus Lundgren\Documents\GitHub\Sjukhus\Databaser_GruppUppgift\Hospital\Hospital\obj\Debug\Hospital.Migrations.Added_treatment.resources
+C:\Users\Hampus Lundgren\Documents\GitHub\Sjukhus\Databaser_GruppUppgift\Hospital\Hospital\obj\Debug\Hospital.csproj.GenerateResource.Cache
+C:\Users\Hampus Lundgren\Documents\GitHub\Sjukhus\Databaser_GruppUppgift\Hospital\Hospital\obj\Debug\Hospital.dll
+C:\Users\Hampus Lundgren\Documents\GitHub\Sjukhus\Databaser_GruppUppgift\Hospital\Hospital\obj\Debug\Hospital.pdb

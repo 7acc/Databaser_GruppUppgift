@@ -37,8 +37,8 @@ namespace Hospital
         { get { return FName + " " + LName; } }
 
         // ----------F-Keys------------
-        public Proffesion ProffesionID { get; set; }
-        public Department DepartmentID { get; set; }
+        public Proffesion _Proffesion { get; set; }
+        public Department _Department { get; set; }
         public virtual ICollection<Treatment> Treatments { get; set; }
 
         //-----------Construktor-------

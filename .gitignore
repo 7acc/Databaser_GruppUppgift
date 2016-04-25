@@ -1,0 +1,6 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Hospital/Hospital/obj/Debug/Hospital.csproj.GenerateResource.Cache
+/Hospital/Hospital/obj/Debug/Hospital.Migrations.Added_treatment.resources

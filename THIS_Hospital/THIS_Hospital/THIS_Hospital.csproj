@@ -167,12 +167,42 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Classes\Couse\Cause.cs" />
+    <Compile Include="Classes\Couse\CauseType.cs" />
+    <Compile Include="Classes\Drugs\Drug.cs" />
+    <Compile Include="Classes\Drugs\DrugType.cs" />
+    <Compile Include="Classes\Drugs\Prescription.cs" />
+    <Compile Include="Controllers\CauseTypesController.cs" />
+    <Compile Include="Controllers\TreatmentsController.cs" />
+    <Compile Include="HospitalDBContext.cs" />
+    <Compile Include="Classes\Humans\Patient.cs" />
+    <Compile Include="Classes\Humans\Person.cs" />
+    <Compile Include="Classes\Humans\Proffesion.cs" />
+    <Compile Include="Classes\Humans\Staff.cs" />
+    <Compile Include="Classes\RoomDepartment\Department.cs" />
+    <Compile Include="Classes\RoomDepartment\Room.cs" />
+    <Compile Include="Classes\Treatment\Treatment.cs" />
+    <Compile Include="Classes\Treatment\TreatmentStatus.cs" />
+    <Compile Include="Classes\Treatment\WhatsDone.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604251457119_First.cs" />
+    <Compile Include="Migrations\201604251457119_First.Designer.cs">
+      <DependentUpon>201604251457119_First.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604251549454_controlers.cs" />
+    <Compile Include="Migrations\201604251549454_controlers.Designer.cs">
+      <DependentUpon>201604251549454_controlers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604251558380_test1.cs" />
+    <Compile Include="Migrations\201604251558380_test1.Designer.cs">
+      <DependentUpon>201604251558380_test1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -234,6 +264,31 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Causes\Create.cshtml" />
+    <Content Include="Views\Causes\Delete.cshtml" />
+    <Content Include="Views\Causes\Details.cshtml" />
+    <Content Include="Views\Causes\Edit.cshtml" />
+    <Content Include="Views\Causes\Index.cshtml" />
+    <Content Include="Views\Staffs\Create.cshtml" />
+    <Content Include="Views\Staffs\Delete.cshtml" />
+    <Content Include="Views\Staffs\Details.cshtml" />
+    <Content Include="Views\Staffs\Edit.cshtml" />
+    <Content Include="Views\Staffs\Index.cshtml" />
+    <Content Include="Views\Patients\Create.cshtml" />
+    <Content Include="Views\Patients\Delete.cshtml" />
+    <Content Include="Views\Patients\Details.cshtml" />
+    <Content Include="Views\Patients\Edit.cshtml" />
+    <Content Include="Views\Patients\Index.cshtml" />
+    <Content Include="Views\Treatments\Create.cshtml" />
+    <Content Include="Views\Treatments\Delete.cshtml" />
+    <Content Include="Views\Treatments\Details.cshtml" />
+    <Content Include="Views\Treatments\Edit.cshtml" />
+    <Content Include="Views\Treatments\Index.cshtml" />
+    <Content Include="Views\CauseTypes\Create.cshtml" />
+    <Content Include="Views\CauseTypes\Delete.cshtml" />
+    <Content Include="Views\CauseTypes\Details.cshtml" />
+    <Content Include="Views\CauseTypes\Edit.cshtml" />
+    <Content Include="Views\CauseTypes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -245,6 +300,17 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201604251457119_First.resx">
+      <DependentUpon>201604251457119_First.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604251549454_controlers.resx">
+      <DependentUpon>201604251549454_controlers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604251558380_test1.resx">
+      <DependentUpon>201604251558380_test1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

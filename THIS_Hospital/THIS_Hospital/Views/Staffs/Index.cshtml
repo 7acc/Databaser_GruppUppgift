@@ -1,0 +1,69 @@
+﻿@model IEnumerable<THIS_Hospital.Staff>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Adress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PhoneNR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SSN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HierDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model._Department)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Adress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PhoneNR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SSN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HierDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item._Department)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.StaffID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.StaffID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.StaffID })
+        </td>
+    </tr>
+}
+
+</table>

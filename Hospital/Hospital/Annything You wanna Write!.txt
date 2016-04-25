@@ -1,9 +1,9 @@
 ﻿------WORK AREA-----
-Hampus :
-Aveen :
-Yaser : 
-Jack :
-Henrik
+Hampus : Humans
+Aveen : Drugs
+Yaser : RoomDepartment
+Jack : Treatment
+Henrik : Cause
 
 
 

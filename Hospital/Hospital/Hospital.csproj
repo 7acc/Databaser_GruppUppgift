@@ -179,7 +179,6 @@
     <Compile Include="Class_Map\RoomDepartment\Room.cs" />
     <Compile Include="Class_Map\Treatment\Treatment.cs" />
     <Compile Include="Class_Map\Treatment\TreatmentStatus.cs" />
-    <Compile Include="Class_Map\Treatment\Treatment_Staff.cs" />
     <Compile Include="Class_Map\Treatment\WhatsDone.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />

@@ -14,7 +14,7 @@ namespace Hospital
         public DbSet<Treatment> _Treatment { get; set; }
         public DbSet<WhatsDone> _WhatsDone{ get; set; }
         public DbSet<TreatmentStatus> _Treatmentstatus { get; set; }
-        public DbSet<Treatment_Staff> _Treatment_staff { get; set; }
+   
 
         public HospitalDBContext() : base("name =HospitalDBContextConectionString")
         {

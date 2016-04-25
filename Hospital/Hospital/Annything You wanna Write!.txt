@@ -1,4 +1,13 @@
-﻿-----------------------------------------------------------------
+﻿------WORK AREA-----
+Hampus :
+Aveen :
+Yaser : 
+Jack :
+Henrik
+
+
+
+-----------------------------------------------------------------
 <<<<Insert a primary Key
 
 public ICollection<AirCraft> AirCraft { get; set; }

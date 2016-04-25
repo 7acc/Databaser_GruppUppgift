@@ -54,7 +54,7 @@ namespace Hospital
         // --------Construktor-----------
         public Patient()
         {
-            this.Causes = new HashSet<Cause>();
+           this.Causes = new HashSet<Cause>();
         }
 
 

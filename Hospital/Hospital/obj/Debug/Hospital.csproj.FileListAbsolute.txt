@@ -133,7 +133,6 @@ C:\Users\annah\Documents\GitHub\Databaser_GruppUppgift\Hospital\Hospital\bin\Mic
 C:\Users\annah\Documents\GitHub\Databaser_GruppUppgift\Hospital\Hospital\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\annah\Documents\GitHub\Databaser_GruppUppgift\Hospital\Hospital\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\annah\Documents\GitHub\Databaser_GruppUppgift\Hospital\Hospital\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\annah\Documents\GitHub\Databaser_GruppUppgift\Hospital\Hospital\obj\Debug\Hospital.csprojResolveAssemblyReference.cache
 C:\Users\annah\Documents\GitHub\Databaser_GruppUppgift\Hospital\Hospital\obj\Debug\Hospital.dll
 C:\Users\annah\Documents\GitHub\Databaser_GruppUppgift\Hospital\Hospital\obj\Debug\Hospital.pdb
 C:\Users\annah\Documents\GitHub\Databaser_GruppUppgift\Hospital\Hospital\obj\Debug\Hospital.csproj.GenerateResource.Cache
@@ -209,3 +208,4 @@ C:\Users\Hampus Lundgren\Documents\GitHub\Sjukhus\Databaser_GruppUppgift\Hospita
 C:\Users\Hampus Lundgren\Documents\GitHub\Sjukhus\Databaser_GruppUppgift\Hospital\Hospital\obj\Debug\Hospital.csproj.GenerateResource.Cache
 C:\Users\Hampus Lundgren\Documents\GitHub\Sjukhus\Databaser_GruppUppgift\Hospital\Hospital\obj\Debug\Hospital.dll
 C:\Users\Hampus Lundgren\Documents\GitHub\Sjukhus\Databaser_GruppUppgift\Hospital\Hospital\obj\Debug\Hospital.pdb
+C:\Users\annah\Documents\GitHub\Databaser_GruppUppgift\Hospital\Hospital\obj\Debug\Hospital.Migrations.namename.resources

@@ -188,6 +188,10 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="HospitalDBContext.cs" />
+    <Compile Include="Migrations\201604251222432_Added_treatment.cs" />
+    <Compile Include="Migrations\201604251222432_Added_treatment.Designer.cs">
+      <DependentUpon>201604251222432_Added_treatment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -265,6 +269,11 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201604251222432_Added_treatment.resx">
+      <DependentUpon>201604251222432_Added_treatment.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

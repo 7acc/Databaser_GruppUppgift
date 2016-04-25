@@ -136,3 +136,5 @@ C:\Users\annah\Documents\GitHub\Databaser_GruppUppgift\Hospital\Hospital\bin\Mic
 C:\Users\annah\Documents\GitHub\Databaser_GruppUppgift\Hospital\Hospital\obj\Debug\Hospital.csprojResolveAssemblyReference.cache
 C:\Users\annah\Documents\GitHub\Databaser_GruppUppgift\Hospital\Hospital\obj\Debug\Hospital.dll
 C:\Users\annah\Documents\GitHub\Databaser_GruppUppgift\Hospital\Hospital\obj\Debug\Hospital.pdb
+C:\Users\annah\Documents\GitHub\Databaser_GruppUppgift\Hospital\Hospital\obj\Debug\Hospital.csproj.GenerateResource.Cache
+C:\Users\annah\Documents\GitHub\Databaser_GruppUppgift\Hospital\Hospital\obj\Debug\Hospital.Migrations.Added_treatment.resources

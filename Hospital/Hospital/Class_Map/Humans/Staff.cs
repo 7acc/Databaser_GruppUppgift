@@ -37,7 +37,7 @@ namespace Hospital
 
         // F-Keys
         public int ProfessionID { get; set; }
-        public int DepartmentID { get; set; }
+        public int DepartmentID { get; set; }       
 
 
         //public Staff(string FName, string LName, string Adress, string PhoneNr):base(FName,LName,Adress,PhoneNr)

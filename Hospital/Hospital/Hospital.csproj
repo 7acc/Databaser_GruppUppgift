@@ -167,10 +167,10 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="Class_Map\Couse\CosueTypeProfession.cs" />
-    <Compile Include="Class_Map\Couse\Couse.cs" />
-    <Compile Include="Class_Map\Couse\CouseType.cs" />
-    <Compile Include="Class_Map\Couse\Couse_Patient.cs" />
+    <Compile Include="Class_Map\Cause\CauseTypeProfession.cs" />
+    <Compile Include="Class_Map\Cause\Cause.cs" />
+    <Compile Include="Class_Map\Cause\CauseType.cs" />
+    <Compile Include="Class_Map\Cause\Cause_Patient.cs" />
     <Compile Include="Class_Map\Drugs\Drug.cs" />
     <Compile Include="Class_Map\Drugs\DrugType.cs" />
     <Compile Include="Class_Map\Drugs\Prescription.cs" />

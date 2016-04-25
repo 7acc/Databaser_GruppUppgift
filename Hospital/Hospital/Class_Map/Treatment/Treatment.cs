@@ -10,7 +10,10 @@ namespace Hospital.Class_Map.Treatment
     public class Treatment
     {
 
-
+        public Treatment()
+        {
+            this.Staffs = new HashSet<Staff>();
+        }
 
         //------------------------------------------------  
         public int TreatmentID { get; set; }
@@ -23,17 +26,19 @@ namespace Hospital.Class_Map.Treatment
         public bool StillAlive { get; set; }
 
         //------------------------------------------------  
-        [ForeignKey("PatientRefID")]
-        public int PatientRefID { get; set; }
+        public int PatientID { get; set; }
+        public virtual Patient Patient { get; set;}
 
         //------------------------------------------------
-
-        [ForeignKey("WhatsDoneRefID")]
-        public int? WhatsDoneRefID { get; set; }
+        public int WhatsDoneID { get; set; }
+        public virtual WhatsDone whatsDone { get; set; }
 
         //------------------------------------------------
-        [ForeignKey("TreatmentStatusRefID")]
-        public int TreatmentStatusRefID { get; set; }
+        public int TreatmentStatusID { get; set; }     
+        public virtual TreatmentStatus TreatmentStatus { get; set; }
+
+        //-----------------------------------------------
+        public virtual ICollection<Staff> Staffs { get; set; }
 
     }
 }

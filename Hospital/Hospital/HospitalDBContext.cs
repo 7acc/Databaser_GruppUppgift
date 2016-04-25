@@ -11,7 +11,7 @@ namespace Hospital
         public DbSet<Staff> _Staff { get; set; }
         public DbSet<Patient> _Patient { get; set; }
 
-        public HospitalDBContext() : base("name =HospotalDBContextConectionString")
+        public HospitalDBContext() : base("name =HospitalDBContextConectionString")
         {
 
         }

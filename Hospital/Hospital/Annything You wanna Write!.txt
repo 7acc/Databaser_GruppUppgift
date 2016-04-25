@@ -1,5 +1,5 @@
 ﻿-----------------------------------------------------------------
-Insert a primary Key
+<<<<Insert a primary Key
 
 public ICollection<AirCraft> AirCraft { get; set; }
 
@@ -8,3 +8,12 @@ public ICollection<AirCraft> AirCraft { get; set; }
             this.AirCraft = new HashSet<AirCraft>();
         }
 ------------------------------------------------------------------
+<<<<Add Migrations // so you can edit your file
+
+Enable-Migrations -ContextTypeName Hospital.HospotalDBContext -EnableAutomaticMigration:$true
+------------------------------------------------------------------
+  <!-- Här lägger du in connectionString                                         . = din dator eller var den ska vara                                      Berättar att det ska vara en SQL DB-->
+  <connectionStrings>
+    <add name ="AviastionDBContextConectionString" connectionString="Data Source=.;Initial Catalog= TEST_ASP.NET_Web_AppDB; Integrated Security=true" providerName="System.Data.SqlClient"/>
+  </connectionStrings>
+  ------------------------------------------------------------------

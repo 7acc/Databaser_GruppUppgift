@@ -9,6 +9,8 @@ namespace Hospital
 {
     public abstract class Person
     {
+
+
         //-------P-Key------
         public int PersonID { get; set; }
 

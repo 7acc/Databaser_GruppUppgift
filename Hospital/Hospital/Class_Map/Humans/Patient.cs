@@ -13,7 +13,7 @@ namespace Hospital
     public class Patient
     {
         // -----------P-Key------------
-        public int PatientID { get; set; }
+      //  public int PatientID { get; set; }
 
         //--------- Properties---------
         // First name

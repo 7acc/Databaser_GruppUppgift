@@ -167,6 +167,20 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Class_Map\Couse\CosueTypeProfession.cs" />
+    <Compile Include="Class_Map\Couse\Couse.cs" />
+    <Compile Include="Class_Map\Couse\CouseType.cs" />
+    <Compile Include="Class_Map\Couse\Couse_Patient.cs" />
+    <Compile Include="Class_Map\Drugs\Drug.cs" />
+    <Compile Include="Class_Map\Drugs\DrugType.cs" />
+    <Compile Include="Class_Map\Drugs\Prescription.cs" />
+    <Compile Include="Class_Map\Humans\Proffesion.cs" />
+    <Compile Include="Class_Map\RoomDepartment\Department.cs" />
+    <Compile Include="Class_Map\RoomDepartment\Room.cs" />
+    <Compile Include="Class_Map\Treatment\Treatment.cs" />
+    <Compile Include="Class_Map\Treatment\TreatmentStatus.cs" />
+    <Compile Include="Class_Map\Treatment\Treatment_Staff.cs" />
+    <Compile Include="Class_Map\Treatment\WhatsDone.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -180,10 +194,10 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Class_Map\Patient.cs" />
-    <Compile Include="Class_Map\Person.cs" />
+    <Compile Include="Class_Map\Humans\Patient.cs" />
+    <Compile Include="Class_Map\Humans\Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Class_Map\Staff.cs" />
+    <Compile Include="Class_Map\Humans\Staff.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>

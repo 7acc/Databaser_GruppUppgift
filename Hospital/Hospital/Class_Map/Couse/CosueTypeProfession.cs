@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Hospital.Class_Map.Couse
 {
-    public class CosueTypeProfession
+    public class CosueType_Profession
     {
     }
 }

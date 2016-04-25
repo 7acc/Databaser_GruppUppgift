@@ -39,7 +39,7 @@ namespace Hospital
         // ----------F-Keys------------
         public Proffesion ProffesionID { get; set; }
         public Department DepartmentID { get; set; }
-        public ICollection<Treatment> Treatments { get; set; }
+         virtual ICollection<Treatment> Treatments { get; set; }
 
         //-----------Construktor-------
         public Staff()

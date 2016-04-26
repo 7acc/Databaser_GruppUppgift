@@ -10,6 +10,8 @@ namespace THIS_Hospital
     {
         //---------P-Key---------------
         public int ProffesionID { get; set; }
+
+        //---------Properties--------------
         public string Profession_Name { get; set; }
 
         //----------F-Key-------------

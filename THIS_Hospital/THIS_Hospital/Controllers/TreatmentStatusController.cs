@@ -10,107 +10,107 @@ using THIS_Hospital;
 
 namespace THIS_Hospital.Controllers
 {
-    public class StaffsController : Controller
+    public class TreatmentStatusController : Controller
     {
         private HospitalDBContext db = new HospitalDBContext();
 
-        // GET: Staffs
+        // GET: TreatmentStatus
         public ActionResult Index()
         {
-            return View(db._Staff.ToList());
+            return View(db._Treatmentstatus.ToList());
         }
 
-        // GET: Staffs/Details/5
+        // GET: TreatmentStatus/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Staff staff = db._Staff.Find(id);
-            if (staff == null)
+            TreatmentStatus treatmentStatus = db._Treatmentstatus.Find(id);
+            if (treatmentStatus == null)
             {
                 return HttpNotFound();
             }
-            return View(staff);
+            return View(treatmentStatus);
         }
 
-        // GET: Staffs/Create
+        // GET: TreatmentStatus/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Staffs/Create
+        // POST: TreatmentStatus/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "StaffID,FName,LName,Adress,PhoneNR,SSN,HireDate")] Staff staff)
+        public ActionResult Create([Bind(Include = "TreatmentStatusID,Status")] TreatmentStatus treatmentStatus)
         {
             if (ModelState.IsValid)
             {
-                db._Staff.Add(staff);
+                db._Treatmentstatus.Add(treatmentStatus);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(staff);
+            return View(treatmentStatus);
         }
 
-        // GET: Staffs/Edit/5
+        // GET: TreatmentStatus/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Staff staff = db._Staff.Find(id);
-            if (staff == null)
+            TreatmentStatus treatmentStatus = db._Treatmentstatus.Find(id);
+            if (treatmentStatus == null)
             {
                 return HttpNotFound();
             }
-            return View(staff);
+            return View(treatmentStatus);
         }
 
-        // POST: Staffs/Edit/5
+        // POST: TreatmentStatus/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "StaffID,FName,LName,Adress,PhoneNR,SSN,HireDate")] Staff staff)
+        public ActionResult Edit([Bind(Include = "TreatmentStatusID,Status")] TreatmentStatus treatmentStatus)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(staff).State = EntityState.Modified;
+                db.Entry(treatmentStatus).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(staff);
+            return View(treatmentStatus);
         }
 
-        // GET: Staffs/Delete/5
+        // GET: TreatmentStatus/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Staff staff = db._Staff.Find(id);
-            if (staff == null)
+            TreatmentStatus treatmentStatus = db._Treatmentstatus.Find(id);
+            if (treatmentStatus == null)
             {
                 return HttpNotFound();
             }
-            return View(staff);
+            return View(treatmentStatus);
         }
 
-        // POST: Staffs/Delete/5
+        // POST: TreatmentStatus/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Staff staff = db._Staff.Find(id);
-            db._Staff.Remove(staff);
+            TreatmentStatus treatmentStatus = db._Treatmentstatus.Find(id);
+            db._Treatmentstatus.Remove(treatmentStatus);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

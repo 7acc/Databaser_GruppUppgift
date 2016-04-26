@@ -174,8 +174,11 @@
     <Compile Include="Classes\Drugs\Prescription.cs" />
     <Compile Include="Controllers\CauseTypesController.cs" />
     <Compile Include="Controllers\PatientsController.cs" />
+    <Compile Include="Controllers\ProffesionsController.cs" />
     <Compile Include="Controllers\StaffsController.cs" />
     <Compile Include="Controllers\TreatmentsController.cs" />
+    <Compile Include="Controllers\TreatmentStatusController.cs" />
+    <Compile Include="Controllers\WhatsDonesController.cs" />
     <Compile Include="HospitalDBContext.cs" />
     <Compile Include="Classes\Humans\Patient.cs" />
     <Compile Include="Classes\Humans\Person.cs" />
@@ -291,6 +294,26 @@
     <Content Include="Views\CauseTypes\Details.cshtml" />
     <Content Include="Views\CauseTypes\Edit.cshtml" />
     <Content Include="Views\CauseTypes\Index.cshtml" />
+    <Content Include="Views\Treatments1\Create.cshtml" />
+    <Content Include="Views\Treatments1\Delete.cshtml" />
+    <Content Include="Views\Treatments1\Details.cshtml" />
+    <Content Include="Views\Treatments1\Edit.cshtml" />
+    <Content Include="Views\Treatments1\Index.cshtml" />
+    <Content Include="Views\TreatmentStatus\Create.cshtml" />
+    <Content Include="Views\TreatmentStatus\Delete.cshtml" />
+    <Content Include="Views\TreatmentStatus\Details.cshtml" />
+    <Content Include="Views\TreatmentStatus\Edit.cshtml" />
+    <Content Include="Views\TreatmentStatus\Index.cshtml" />
+    <Content Include="Views\WhatsDones\Create.cshtml" />
+    <Content Include="Views\WhatsDones\Delete.cshtml" />
+    <Content Include="Views\WhatsDones\Details.cshtml" />
+    <Content Include="Views\WhatsDones\Edit.cshtml" />
+    <Content Include="Views\WhatsDones\Index.cshtml" />
+    <Content Include="Views\Proffesions\Create.cshtml" />
+    <Content Include="Views\Proffesions\Delete.cshtml" />
+    <Content Include="Views\Proffesions\Details.cshtml" />
+    <Content Include="Views\Proffesions\Edit.cshtml" />
+    <Content Include="Views\Proffesions\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

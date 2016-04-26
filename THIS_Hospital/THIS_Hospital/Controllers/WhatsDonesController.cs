@@ -10,107 +10,107 @@ using THIS_Hospital;
 
 namespace THIS_Hospital.Controllers
 {
-    public class StaffsController : Controller
+    public class WhatsDonesController : Controller
     {
         private HospitalDBContext db = new HospitalDBContext();
 
-        // GET: Staffs
+        // GET: WhatsDones
         public ActionResult Index()
         {
-            return View(db._Staff.ToList());
+            return View(db._WhatsDone.ToList());
         }
 
-        // GET: Staffs/Details/5
+        // GET: WhatsDones/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Staff staff = db._Staff.Find(id);
-            if (staff == null)
+            WhatsDone whatsDone = db._WhatsDone.Find(id);
+            if (whatsDone == null)
             {
                 return HttpNotFound();
             }
-            return View(staff);
+            return View(whatsDone);
         }
 
-        // GET: Staffs/Create
+        // GET: WhatsDones/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Staffs/Create
+        // POST: WhatsDones/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "StaffID,FName,LName,Adress,PhoneNR,SSN,HireDate")] Staff staff)
+        public ActionResult Create([Bind(Include = "WhatsDoneID,Description")] WhatsDone whatsDone)
         {
             if (ModelState.IsValid)
             {
-                db._Staff.Add(staff);
+                db._WhatsDone.Add(whatsDone);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(staff);
+            return View(whatsDone);
         }
 
-        // GET: Staffs/Edit/5
+        // GET: WhatsDones/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Staff staff = db._Staff.Find(id);
-            if (staff == null)
+            WhatsDone whatsDone = db._WhatsDone.Find(id);
+            if (whatsDone == null)
             {
                 return HttpNotFound();
             }
-            return View(staff);
+            return View(whatsDone);
         }
 
-        // POST: Staffs/Edit/5
+        // POST: WhatsDones/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "StaffID,FName,LName,Adress,PhoneNR,SSN,HireDate")] Staff staff)
+        public ActionResult Edit([Bind(Include = "WhatsDoneID,Description")] WhatsDone whatsDone)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(staff).State = EntityState.Modified;
+                db.Entry(whatsDone).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(staff);
+            return View(whatsDone);
         }
 
-        // GET: Staffs/Delete/5
+        // GET: WhatsDones/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Staff staff = db._Staff.Find(id);
-            if (staff == null)
+            WhatsDone whatsDone = db._WhatsDone.Find(id);
+            if (whatsDone == null)
             {
                 return HttpNotFound();
             }
-            return View(staff);
+            return View(whatsDone);
         }
 
-        // POST: Staffs/Delete/5
+        // POST: WhatsDones/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Staff staff = db._Staff.Find(id);
-            db._Staff.Remove(staff);
+            WhatsDone whatsDone = db._WhatsDone.Find(id);
+            db._WhatsDone.Remove(whatsDone);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

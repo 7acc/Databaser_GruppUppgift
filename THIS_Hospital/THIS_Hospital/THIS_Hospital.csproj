@@ -167,8 +167,8 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="Classes\Couse\Cause.cs" />
-    <Compile Include="Classes\Couse\CauseType.cs" />
+    <Compile Include="Classes\Cause\Cause.cs" />
+    <Compile Include="Classes\Cause\CauseType.cs" />
     <Compile Include="Classes\Drugs\Drug.cs" />
     <Compile Include="Classes\Drugs\DrugType.cs" />
     <Compile Include="Classes\Drugs\Prescription.cs" />

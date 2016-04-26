@@ -173,6 +173,8 @@
     <Compile Include="Classes\Drugs\DrugType.cs" />
     <Compile Include="Classes\Drugs\Prescription.cs" />
     <Compile Include="Controllers\CauseTypesController.cs" />
+    <Compile Include="Controllers\PatientsController.cs" />
+    <Compile Include="Controllers\StaffsController.cs" />
     <Compile Include="Controllers\TreatmentsController.cs" />
     <Compile Include="HospitalDBContext.cs" />
     <Compile Include="Classes\Humans\Patient.cs" />

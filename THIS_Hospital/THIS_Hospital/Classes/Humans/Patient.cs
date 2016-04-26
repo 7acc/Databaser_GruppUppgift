@@ -48,13 +48,13 @@ namespace THIS_Hospital
 
 
         // Många till många
-        public virtual ICollection<Cause> Causes { get; set; }
+      //  public virtual ICollection<Cause> Causes { get; set; }
 
 
         // --------Construktor-----------
         public Patient()
         {
-           this.Causes = new HashSet<Cause>();
+       //    this.Causes = new HashSet<Cause>();
         }
 
 

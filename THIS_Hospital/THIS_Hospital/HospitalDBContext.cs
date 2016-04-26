@@ -17,7 +17,10 @@ namespace THIS_Hospital
         public DbSet<WhatsDone> _WhatsDone{ get; set; }
         public DbSet<TreatmentStatus> _Treatmentstatus { get; set; }
         public DbSet<Proffesion> _Proffesion { get; set; }
-   
+        public DbSet<Drug> Drugs { get; set; }
+        public DbSet<DrugType> DrugTypes { get; set; }
+        public DbSet<Prescription> Prescriptions { get; set; }
+
 
         public HospitalDBContext() : base("name =HospitalDBContextConectionString")
         {

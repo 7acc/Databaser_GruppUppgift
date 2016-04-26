@@ -27,9 +27,10 @@ namespace THIS_Hospital
         public string PhoneNR { get; set; }
         [Display(Name = "Social Security Number")]
         [StringLength(10)]
-        public string SSN { get; set; }       
+        public string SSN { get; set; }
+        [Display(Name = "Hire date")]
         [DataType(DataType.Date)]
-        public DateTime HierDate { get; set; }
+        public DateTime HireDate { get; set; }
         [Display(Name = "Full Name")]
         public string Name
         { get { return FName + " " + LName; } }

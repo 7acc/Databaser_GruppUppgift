@@ -29,12 +29,6 @@
         <th>
             @Html.DisplayNameFor(model => model.CeckInHospital)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model._Prescription)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.RoomID)
-        </th>
         <th></th>
     </tr>
 
@@ -57,12 +51,6 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.CeckInHospital)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item._Prescription)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.RoomID)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.PatientID }) |

@@ -34,7 +34,7 @@ namespace THIS_Hospital.Controllers
                 return HttpNotFound();
             }
             return View(treatment);
-        }
+        }//
 
         // GET: Treatments/Create
         public ActionResult Create()

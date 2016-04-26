@@ -174,7 +174,6 @@
     <Compile Include="Classes\Drugs\Prescription.cs" />
     <Compile Include="Controllers\CauseTypesController.cs" />
     <Compile Include="Controllers\PatientsController.cs" />
-    <Compile Include="Controllers\ProffesionsController.cs" />
     <Compile Include="Controllers\StaffsController.cs" />
     <Compile Include="Controllers\TreatmentsController.cs" />
     <Compile Include="Controllers\TreatmentStatusController.cs" />

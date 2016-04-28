@@ -2,10 +2,10 @@
 #Syftet är att skapa en fullt fungerande databas system för ett sjukhus med alla tänkbara funktioner
 
 2.FÖR VEM, VILKA ÄR VÅRA MÅLGRUPPER?
-#Målgruppen är att bygga ett användarvänligt system för personalen samt att gruppera avdelningar med rätt "__________"
+#Målgruppen är att bygga ett användarvänligt system för personalen samt forskare som föra statistik
 
 3.VAD BEHÖVER VÅRA MÅLGRUPPERNA?
-#Våra målgrupper är "Licensierad Läkare och Sjuksköterskor" Som ska tilldelas till patienter för bästa vård.
+#Våra målgrupper är "Licensierad Läkare och Sjuksköterskor" som behöver tilldelas patienter och dokumentera statistik för forskare.
 
 4.HUR SKA VI GÅ TILLVÄGA?
 #Det gör vi genom att bygga en struktuerad databas.

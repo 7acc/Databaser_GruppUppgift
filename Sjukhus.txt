@@ -1,14 +1,14 @@
-1.VARFÖR?
+1.VARFÖR GÖR VI DETTA?
 #Syftet är att skapa en fullt fungerande databas system för ett sjukhus med alla tänkbara funktioner
 
-2.FÖR VEM?
-Målgrupparna är patienter i alla åldrar
+2.FÖR VEM, VILKA ÄR VÅRA MÅLGRUPPER?
+#Målgruppen är att bygga ett användarvänligt system för personalen samt att gruppera avdelningar med rätt "__________"
 
-3.VAD?
-Våra målgrupper kommer att behöva tilldelas en "Licensierad Staff" för att bästa möjliga vård
+3.VAD BEHÖVER VÅRA MÅLGRUPPERNA?
+#Våra målgrupper är "Licensierad Läkare och Sjuksköterskor" Som ska tilldelas till patienter för bästa vård.
 
 4.HUR SKA VI GÅ TILLVÄGA?
-Det gör vi genom att bygga en struktuerad databas.
+#Det gör vi genom att bygga en struktuerad databas.
 -------------------
 
 Hur många patienter kan en läkare ha??     PATIENT *---1 LÄKARE

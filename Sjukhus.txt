@@ -1,13 +1,14 @@
 1.VARFÖR?
-För att få struktur på sjukhuset
+#Syftet är att skapa en fullt fungerande databas system för ett sjukhus med alla tänkbara funktioner
 
 2.FÖR VEM?
-Personal och Patienter
+Målgrupparna är patienter i alla åldrar
 
 3.VAD?
-Berätta vem som ska vara var och vem som ska behandla vilka
+Våra målgrupper kommer att behöva tilldelas en "Licensierad Staff" för att bästa möjliga vård
 
 4.HUR SKA VI GÅ TILLVÄGA?
+Det gör vi genom att bygga en struktuerad databas.
 -------------------
 
 Hur många patienter kan en läkare ha??     PATIENT *---1 LÄKARE
